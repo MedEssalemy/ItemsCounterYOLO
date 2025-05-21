@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+
+:root {
+  --primary: #e44d26;
+  --primary-dark: #c53d1b;
+  --success: #34d399;
+  --error: #ef4444;
+}
+
+body {
+  color: #1e293b;
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50;
+  }
+
+  .btn-primary {
+    @apply bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6;
+  }
+
+  .step-indicator {
+    @apply w-10 h-10 rounded-full flex items-center justify-center text-white font-bold;
+  }
+}
